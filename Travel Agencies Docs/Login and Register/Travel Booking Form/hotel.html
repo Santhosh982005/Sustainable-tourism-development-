@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Travel Booking Form ( Hotel, Flight, Car, Cruises)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travel Booking Form ( Hotel, Flight, Car, Cruises)"/>
+    <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<p class="links"><a href="index.html" class="selected">Main Form</a> | <a href="detail.html">Detail Form</a> |<a href="account.html">Account Form</a> | <a href="payment.html">Payment Form</a></p>
+<div class="tabbed-area">
+  <ul class="tabs group">
+    <li><a href="#box-two">Hotel</a></li>
+  </ul>
+  <div class="box-wrap">
+  <div id="box-two">
+    <p class="selected_hotel"></p>
+    <h3>Find Discount &amp;Cheap Hotel Rates</h3>
+    <div id="box-two">
+      <p class="selected_hotel"></p>
+      <h3>Find Discount &amp;Cheap Hotel Rates</h3>
+      <form action="hotel.php" method="post">
+          <label>Where</label>
+          <input type="text" class="large" name="location">
+        <p class="pull-left" >
+          <label>Check-in</label>
+          <input type="text"  class="calender" placeholder=" dd/mm/yyy" name="check_in">
+        </p>
+        <p class="pull-right" >
+          <label>Check-out</label>
+          <input type="text"  class="calender" placeholder=" dd/mm/yyy" name="check_out">
+        </p>
+        <p class="select_age"> <span>
+          <label>Adults (18+)</label>
+          <select class="select-age" name="adults">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+          </select>
+          </span> <span>
+          <label>Child (0-17)</label>
+          <select class="select-age" name="children">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          </span> <span>
+          <label>Rooms</label>
+          <select class="select-age" name="rooms">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5+</option>
+          </select>
+          </span> </p>
+        <p class="center_btn">
+          <button type="submit" class="orange_btn">Next</button>
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>

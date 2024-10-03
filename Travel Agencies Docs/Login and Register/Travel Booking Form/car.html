@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Travel Booking Form ( Hotel, Flight, Car, Cruises)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travel Booking Form ( Hotel, Flight, Car, Cruises)"/>
+    <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<p class="links"><a href="index.html" class="selected">Main Form</a> | <a href="detail.html">Detail Form</a> |<a href="account.html">Account Form</a> | <a href="payment.html">Payment Form</a></p>
+<div class="tabbed-area">
+  <ul class="tabs group">
+    <li><a href="#box-two">Car</a></li>
+  </ul>
+  <div class="box-wrap">
+    <div id="box-three">
+        <p class="selected_car"></p>
+        <h3>Get Great Deals on Car Rentals</h3>
+        <div id="box-three">
+          <p class="selected_car"></p>
+          <h3>Get Great Deals on Car Rentals</h3>
+          <form action="car.php" method="post">
+            <p class="pull-left">
+              <label>Pick-up</label>
+              <input type="text"   name="pickup_location"/>
+            </p>
+            <p class="pull-right">
+              <label>Drop-off</label>
+              <input type="text"   name="dropoff_location">
+            </p>
+            <label>City name or airport</label>
+            <input type="text" class="large" name="city_airport">
+            <p class="pull-left">
+              <label>Pick-up</label>
+              <input type="text"  class="calender" placeholder=" dd/mm/yyy" name="pickup_date">
+            </p>
+            <p class="pull-right">
+              <label>Drop-off</label>
+              <input type="text"  class="calender" placeholder=" dd/mm/yyy" name="dropoff_date">
+            </p>
+            <p class="center_btn">
+              <button type="submit" class="orange_btn">Next</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Travel Booking Form ( Hotel, Flight, Car, Cruises)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Travel Booking Form ( Hotel, Flight, Car, Cruises)"/>
+<meta name="author" content="">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<p class="links"><a href="index.html" class="selected">Main Form</a> | <a href="detail.html">Detail Form</a> |<a href="account.html">Account Form</a> | <a href="payment.html">Payment Form</a></p>
+<div class="tabbed-area">
+  <ul class="tabs group">
+    <li><a href="#box-one">Flight</a></li>
+  </ul>
+  <div class="box-wrap">
+    <div id="box-one">
+      <p class="line"></p>
+      <h3>Search for Cheap Flights</h3>
+      <form action="flight.php" method="post">
+        <p class="select_flight">
+          <span>
+            <input type="radio" name="trip_type" value="Round trip" class="radio" />
+            Round trip
+          </span>
+          <span>
+            <input type="radio" name="trip_type" value="One-way" class="radio" />
+            One-way
+          </span>
+          <span>
+            <input type="radio" name="trip_type" value="Multi-city" class="radio" />
+            Multi-city
+          </span>
+        </p>
+        <p class="pull-left">
+          <label>From<small>( City name or airport )</small></label>
+          <input type="text" name="from_location" />
+        </p>
+        <p class="pull-right">
+          <label>To<small>( City name or airport )</small></label>
+          <input type="text" name="to_location" />
+        </p>
+        <p class="pull-left">
+          <label>Leave</label>
+          <input type="text" name="leave_date" class="calender" placeholder=" dd/mm/yyy"/>
+        </p>
+        <p class="pull-right">
+          <label>Return</label>
+          <input type="text" name="return_date" class="calender" placeholder=" dd/mm/yyy"/>
+        </p>
+        <p class="pull-left">
+          <label>From Time</label>
+          <select name="leave_time">
+                <option>Anytime </option>
+                <option>12:00am</option>
+                <option>1:00am</option>
+                <option>2:00am</option>
+                <option>3:00am</option>
+                <option>4:00am</option>
+                <option>5:00am</option>
+                <option>6:00am</option>
+                <option>7:00am</option>
+                <option>8:00am</option>
+                <option>9:00am</option>
+                <option>10:00am</option>
+                <option>11:00am</option>
+                <option>12:00pm</option>
+                <option>1:00pm</option>
+                <option>2:00pm</option>
+                <option>3:00pm</option>
+                <option>4:00pm</option>
+                <option>5:00pm</option>
+                <option>6:00pm</option>
+                <option>7:00pm</option>
+                <option>8:00pm</option>
+                <option>9:00pm</option>
+                <option>10:00pm</option>
+                <option>11:00pm</option>
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+          </select>
+        </p>
+        <p class="pull-right">
+          <label>To Time</label>
+          <select name="return_time">
+                <option>Anytime </option>
+                <option>12:00am</option>
+                <option>1:00am</option>
+                <option>2:00am</option>
+                <option>3:00am</option>
+                <option>4:00am</option>
+                <option>5:00am</option>
+                <option>6:00am</option>
+                <option>7:00am</option>
+                <option>8:00am</option>
+                <option>9:00am</option>
+                <option>10:00am</option>
+                <option>11:00am</option>
+                <option>12:00pm</option>
+                <option>1:00pm</option>
+                <option>2:00pm</option>
+                <option>3:00pm</option>
+                <option>4:00pm</option>
+                <option>5:00pm</option>
+                <option>6:00pm</option>
+                <option>7:00pm</option>
+                <option>8:00pm</option>
+                <option>9:00pm</option>
+                <option>10:00pm</option>
+                <option>11:00pm</option>
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+          </select>
+        </p>
+        <p class="select_age">
+          <span>
+            <label>Adult(18-64)</label>
+            <select name="adults" class="first">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+            </select>
+          </span>
+          <span>
+            <label>Seniors(65+)</label>
+            <select name="seniors">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+            </select>
+          </span>
+          <span class="pull-right">
+            <label>Children(0-17)</label>
+            <select name="children">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+            </select>
+          </span>
+        </p>
+        <p class="center_btn">
+          <button type="submit" class="orange_btn">Next</button>
+        </p>
+      </form>
+    </div>
+</body>
+</html>
